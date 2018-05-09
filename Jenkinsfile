@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install --no-bin-links' 
+                sh 'npm i --no-bin-links || npm i --no-bin-links' 
             }
         }
     }
