@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm i --no-bin-links'
+                sh 'npm i'
             }
         }
         stage('Test') { 
